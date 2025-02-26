@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.example.fakestore"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -51,9 +51,20 @@ android {
 
 dependencies {
 
+    //GSON
     implementation("com.google.code.gson:gson:2.12.1")
+    //RETROFIT
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
-
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    //HILT
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    //ROOM
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    //COROUTINES
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    //LIVEDATA
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
 
     implementation("androidx.core:core-ktx:1.15.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
